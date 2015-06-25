@@ -7,8 +7,8 @@ var pool = require('ndarray-scratch'),
 
 var A = pool.zeros([10,10])
 
-ops.assigns( band(A,-1), -1 )
+ops.assigns( band(A,-1),  1 )
 ops.assigns( band(A, 0), -2 )
-ops.assigns( band(A, 1), -1 )
+ops.assigns( band(A, 1),  1 )
 
 console.log(show(A))

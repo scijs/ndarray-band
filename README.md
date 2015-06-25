@@ -9,7 +9,7 @@ Create a view of a band of an ndarray
 
 First things first, if bands are meaningful in your matrix problem, there's a chance you should really just be dealing with the bands directly with algorithms designed to work with, for example, tridiagonal or Toeplitz matrices. But if you need a band, then this module provides a convenience function to extract a view of a band, i.e. a diagonal with an offset.
 
-Given an ndarray of dimension `d`, then since the band is a one-dimensional array, only `d-1` offsets are necessary. Thus, the offsets are given for dimensions 1, 2, ..., d-1.
+Given an ndarray of dimension `d`, then since the band is a one-dimensional array, only `d 1` offsets are necessary. Thus, the offsets are given for dimensions 1, 2, ..., d 1.
 
 
 ## Example
@@ -23,20 +23,20 @@ var pool = require('ndarray-scratch'),
 
 var A = pool.zeros([10,10])
 
-ops.assigns( band(A,-1), -1 )  // (superdiagonal)
+ops.assigns( band(A,-1),  1 )  // (superdiagonal)
 ops.assigns( band(A, 0), -2 )  // (diagonal)
-ops.assigns( band(A, 1), -1 )  // (subdiagonal)
+ops.assigns( band(A, 1),  1 )  // (subdiagonal)
 
-//        [ -2   -1    0    0    0    0    0    0    0    0 ]
-//        [ -1   -2   -1    0    0    0    0    0    0    0 ]
-//        [  0   -1   -2   -1    0    0    0    0    0    0 ]
-//        [  0    0   -1   -2   -1    0    0    0    0    0 ]
-//  A  =  [  0    0    0   -1   -2   -1    0    0    0    0 ]
-//        [  0    0    0    0   -1   -2   -1    0    0    0 ]
-//        [  0    0    0    0    0   -1   -2   -1    0    0 ]
-//        [  0    0    0    0    0    0   -1   -2   -1    0 ]
-//        [  0    0    0    0    0    0    0   -1   -2   -1 ]
-//        [  0    0    0    0    0    0    0    0   -1   -2 ]
+//        [ -2    1    0    0    0    0    0    0    0    0 ]
+//        [  1   -2    1    0    0    0    0    0    0    0 ]
+//        [  0    1   -2    1    0    0    0    0    0    0 ]
+//        [  0    0    1   -2    1    0    0    0    0    0 ]
+//  A  =  [  0    0    0    1   -2    1    0    0    0    0 ]
+//        [  0    0    0    0    1   -2    1    0    0    0 ]
+//        [  0    0    0    0    0    1   -2    1    0    0 ]
+//        [  0    0    0    0    0    0    1   -2    1    0 ]
+//        [  0    0    0    0    0    0    0    1   -2    1 ]
+//        [  0    0    0    0    0    0    0    0    1   -2 ]
 ```
 
 
@@ -53,7 +53,7 @@ $ npm install ndarray-band
 Create a view of a band of an ndarray given offsets along the dimensions.
 
 * `A`: the ndarray of dimension `d` of which to create a view
-* `offsets`: an array of length `d-1` containing the offset of the band along the respective dimensions. For the special case `d = 1`, the band is equal to the original vector so the offset is unused. For the special case `d = 2`, there is only one offset so a scalar is permitted in place of an array.
+* `offsets`: an array of length `d 1` containing the offset of the band along the respective dimensions. For the special case `d = 1`, the band is equal to the original vector so the offset is unused. For the special case `d = 2`, there is only one offset so a scalar is permitted in place of an array.
 
 **Returns**: a 1-D ndarray starting at element 0 and of whatever length required such that the view will never contain an element outside the original ndarray.
 
