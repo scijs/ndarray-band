@@ -19,7 +19,7 @@ Consider constructing the 10 x 10 1-D discrete Laplacian operator. Of course in 
 ```javascript
 var pool = require('ndarray-scratch'),
     ops = require('ndarray-ops'),
-    band = require('../lib')
+    band = require('ndarray-band')
 
 var A = pool.zeros([10,10])
 
