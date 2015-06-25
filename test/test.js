@@ -41,6 +41,13 @@ describe( "2D (square)", function() {
   it("band(A,  2)",function() { assert( ndt.equal( band(A, 2), ndarray([7])    ))})
   it("band(A,  3)",function() { assert( ndt.equal( band(A, 3), ndarray([])     ))})
   it("band(A,  4)",function() { assert( ndt.equal( band(A, 4), ndarray([])     ))})
+
+  it('band(A[1:2,0:2], 0)', function() {
+    assert( ndt.equal( band(A.lo(1,0), 0), ndarray([4,8])) )
+  })
+  it('band(A[1:2,0:2], -1)', function() {
+    assert( ndt.equal( band(A.lo(1,0), -1), ndarray([5,9])) )
+  })
 })
 
 describe( "2D (tall)", function() {
