@@ -11,7 +11,13 @@
     "url": "git://github.com/scijs/calculate-givens-rotation.git"
   },
   "keywords": [
-    "scijs"
+    "scijs",
+    "ndarray",
+    "linear-algebra",
+    "toeplitz",
+    "tridiagonal",
+    "diagonal",
+    "matrix"
   ],
   "author": "Ricky Reusser",
   "license": "MIT",
