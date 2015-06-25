@@ -25,7 +25,6 @@
     "chai": "^3.0.0",
     "iota-array": "^1.0.0",
     "mocha": "^2.2.5",
-    "ndarray": "^1.0.18",
     "ndarray-diagonal": "^1.0.0",
     "ndarray-ops": "^1.2.2",
     "ndarray-scratch": "^1.1.1",
