@@ -53,7 +53,7 @@ $ npm install ndarray-band
 Create a view of a band of an ndarray given offsets
 
 * `A`: the ndarray of dimension `d` of which to create a view
-* `offsets`: an array of length `d-1` containing the offset of the band along the corresponding dimension. For the special case `d = 1`, the band must equal the full vector so the offset is unused. For the special case `d = 2`, there is only one offset so a scalar is permitted in place of an array.
+* `offsets`: an array of length `d-1` containing the offset of the band along the respective dimensions. For the special case `d = 1`, the band is equal to the original vector so the offset is unused. For the special case `d = 2`, there is only one offset so a scalar is permitted in place of an array.
 
 **Returns**: a 1-D ndarray starting at element 0 and of whatever length required such that the view will never contain an element outside the original ndarray.
 
