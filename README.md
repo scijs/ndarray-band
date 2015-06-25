@@ -50,7 +50,7 @@ $ npm install ndarray-band
 ## API
 
 ### `require('ndarray-band')( A, offsets )`
-Create a view of a band of an ndarray given offsets
+Create a view of a band of an ndarray given offsets along the dimensions.
 
 * `A`: the ndarray of dimension `d` of which to create a view
 * `offsets`: an array of length `d-1` containing the offset of the band along the respective dimensions. For the special case `d = 1`, the band is equal to the original vector so the offset is unused. For the special case `d = 2`, there is only one offset so a scalar is permitted in place of an array.
@@ -60,4 +60,4 @@ Create a view of a band of an ndarray given offsets
 
 ## Credits
 
-(c) 2015 . MIT License
+(c) 2015 Ricky Reusser. MIT License
