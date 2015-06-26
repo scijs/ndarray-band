@@ -1,16 +1,25 @@
 # ndarray-band 
 
-[![Build Status](https://travis-ci.org/scijs/ndarray-band.svg?branch=1.0.0)](https://travis-ci.org/scijs/ndarray-band) [![npm version](https://badge.fury.io/js/ndarray-band.svg)](http://badge.fury.io/js/ndarray-band)
+[![Build Status](https://travis-ci.org/scijs/ndarray-band.svg)](https://travis-ci.org/scijs/ndarray-band) [![npm version](https://badge.fury.io/js/ndarray-band.svg)](http://badge.fury.io/js/ndarray-band) [![Dependency Status](https://david-dm.org/scijs/ndarray-band.svg)](https://david-dm.org/scijs/ndarray-band)
 
 Create a view of a band of an ndarray
 
 
 ## Introduction
 
-First things first, if bands are meaningful in your matrix problem, there's a chance you should really just be dealing with the bands directly with algorithms designed to work with, for example, tridiagonal or Toeplitz matrices. But if you need a band, then this module provides a convenience function to extract a view of a band, i.e. a diagonal with an offset.
+First things first, if bands are meaningful in your matrix problem, there's a chance you should really just be dealing with the bands directly using algorithms designed to work with, for example, tridiagonal or Toeplitz matrices. But if you need a band, then this module provides a convenience function to extract a view of a band, i.e. a diagonal with an offset.
 
 Note that for an ndarray of dimension `d`, since the band is a one-dimensional array, only `d-1` offsets are necessary. Thus, the offsets are given for dimensions 1, 2, ..., d-1.
 
+Also note that for dimensions greater than two, this gets a little confusing. Here's a more precise specification that's not exactly less confusing, but at least it's precise: Given an array `A` and offsets `offset_1`, `offset_2`, ..., `offset_d-1`, ndarray-band returns a view of `A` at `A(offset_1 + i_1 + i, offset_2 + i_1 + i, ..., offset_d-1 + i_1 + i, i_1 + i)` where `i_1` is the the first element that falls within the bounds of `A` and `i` is the index of the view starting at zero. The length of the band will be such that it only ever contains element within the bounds of `A`.
+
+To make that a little more concrete, the bands of a 3 x 4 tridiagonal matrix are indexed like:
+
+```
+[  b_0   c_0   0      0   ]
+[  a_0   b_1   c_1    0   ]
+[  0     a_1   b_2    c_2 ]
+```
 
 ## Example
 
