@@ -21,7 +21,7 @@ To make that actually concrete, the bands of a <img alt="undefined" valign="midd
 
 
 
-<p align="center"><img alt="undefined" valign="middle" width="158.4" height="84.80000000000001" src="https://rawgit.com/scijs/ndarray-band/master/docs/images/left-beginarraycccc-b_0-c_0-0-0-a_0-b_1-c_1-0-6f0390b691.svg"></p>
+<p align="center"><img alt="undefined" valign="middle" width="161.60000000000002" height="84.80000000000001" src="https://rawgit.com/scijs/ndarray-band/master/docs/images/left-beginarraycccc-c_0-d_0-e_0-f_0-b_0-c_1-d-18ad5c0160.svg"></p>
 
 
 

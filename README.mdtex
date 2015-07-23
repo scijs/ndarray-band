@@ -17,9 +17,9 @@ To make that actually concrete, the bands of a $3 \times 4$ tridiagonal matrix a
 
 $$
 \left[ \begin{array}{cccc}
-b_0 & c_0 & 0   & 0 \\
-a_0 & b_1 & c_1 & 0 \\
-0   & a_1 & b_2 & c_2
+c_0 & d_0 & e_0 & f_0 \\
+b_0 & c_1 & d_1 & e_1 \\
+a_0 & b_1 & c_2 & d_2
 \end{array}\right]
 $$
 
