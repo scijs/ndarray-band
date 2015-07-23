@@ -9,7 +9,7 @@ var gulp = require('gulp')
   , path = require('path')
 
 function giturl(rel) {
-  return 'https://rawgit.com/rreusser/gulp-markdown-equations/master/' + rel
+  return 'https://rawgit.com/scijs/ndarray-band/master/' + rel
   //return 'https://cdn.rawgit.com/rreusser/gulp-markdown-equations/master/' + rel
   //return rel
 }
