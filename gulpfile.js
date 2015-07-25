@@ -21,7 +21,7 @@ gulp.task('mdtex',function() {
   var sub = eqSub({
     defaults: {
       display: { margin: '1pt 5pt' },
-      inline: { margin: '1pt 1t 1pt -4pt' }
+      inline: { margin: '1pt 2t 1pt -4pt' }
     }
   })
 
