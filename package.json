@@ -1,6 +1,6 @@
 {
   "name": "ndarray-band",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "Create a view of a band of an ndarray",
   "main": "lib/index.js",
   "scripts": {
