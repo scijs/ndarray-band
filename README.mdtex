@@ -13,7 +13,7 @@ Note that for an ndarray of dimension $d$, since the band is a one-dimensional a
 
 Also note that for dimensions greater than two, this gets a little confusing. Here's a more precise specification that's not exactly less confusing, but at least it's precise: Given an array $A$ and offsets $\mathrm{offset}_1$, $\mathrm{offset}_2$, ..., $\mathrm{offset}_{d-1}$, ndarray-band returns a view of $A$ at $$A(\mathrm{offset}_1 + i_1 + i, \mathrm{offset}_2 + i_1 + i,\; \ldots,\;\mathrm{offset}_{d-1} + i_1 + i, i_1 + i)$$ where $i_1$ is the the first element that falls within the bounds of $A$ and $i$ is the index of the view starting at zero. The length of the band will be such that it only ever contains element within the bounds of $A$.
 
-To make that actually concrete, the bands of a $3 \times 4$ tridiagonal matrix are indexed like:
+To make that actually concrete, the bands of a $3 \times 4$ matrix are indexed like:
 
 $$
 \left[ \begin{array}{cccc}

@@ -17,7 +17,7 @@ Also note that for dimensions greater than two, this gets a little confusing. He
 
  where <img alt="i&lowbar;1" valign="middle" width="20" height="23" src="docs/images/i_1-b3e00247b1.png"> is the the first element that falls within the bounds of <img alt="A" valign="middle" width="19" height="20" src="docs/images/a-ab9f9c6779.png"> and <img alt="i" valign="middle" width="11" height="20" src="docs/images/i-7e6a3286a9.png"> is the index of the view starting at zero. The length of the band will be such that it only ever contains element within the bounds of <img alt="A" valign="middle" width="19" height="20" src="docs/images/a-ab9f9c6779.png">.
 
-To make that actually concrete, the bands of a <img alt="3 &bsol;times 4" valign="middle" width="48.5" height="22" src="docs/images/3-times-4-9908d9131f.png"> tridiagonal matrix are indexed like:
+To make that actually concrete, the bands of a <img alt="3 &bsol;times 4" valign="middle" width="48.5" height="22" src="docs/images/3-times-4-9908d9131f.png"> matrix are indexed like:
 
 
 
